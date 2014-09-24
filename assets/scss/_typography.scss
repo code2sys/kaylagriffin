@@ -1,0 +1,41 @@
+// TYPOGRAPHY
+
+h1 {
+	font-family: $brandonMedium;
+	font-size: 1.65em;
+	text-align: center;
+	text-transform: uppercase;
+	color: $white;
+	line-height: 1.25em;
+	margin: 10px 0;
+	display: none;
+	@include mq(tablet) {
+		display: block;
+	}
+}
+
+h2 {
+	display: none;
+	font-family: $baskerville;
+	font-style: italic;
+	font-size: 0.825em;
+	text-align: center;
+	font-weight: 100;
+	margin-bottom: 20px;
+	color: $dark;
+	@include mq(tablet) {
+		display: block;
+	}
+}
+
+h3 {
+	font-family: $brandonMedium;
+	font-size: 1.35em;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: $white;
+	margin-bottom: 8px;
+	@include mq(tablet) {
+		font-size: 1.10em;
+	}
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Brandon Medium';
+    src: url('../fonts/brandongrotesque-medium.eot');
+    src: url('../fonts/brandongrotesque-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandongrotesque-medium.woff2') format('woff2'),
+         url('../fonts/brandongrotesque-medium.woff') format('woff'),
+         url('../fonts/brandongrotesque-medium.ttf') format('truetype'),
+         url('../fonts/brandongrotesque-medium.svg#brandon_grotesquemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Regular';
+    src: url('../fonts/brandongrotesque-regular.eot');
+    src: url('../fonts/brandongrotesque-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandongrotesque-regular.woff2') format('woff2'),
+         url('../fonts/brandongrotesque-regular.woff') format('woff'),
+         url('../fonts/brandongrotesque-regular.ttf') format('truetype'),
+         url('../fonts/brandongrotesque-regular.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Black';
+    src: url('../fonts/brandongrotesque-black.eot');
+    src: url('../fonts/brandongrotesque-black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandongrotesque-black.woff2') format('woff2'),
+         url('../fonts/brandongrotesque-black.woff') format('woff'),
+         url('../fonts/brandongrotesque-black.ttf') format('truetype'),
+         url('../fonts/brandongrotesque-black.svg#brandon_grotesqueblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'kayla';
+  src: url('../fonts/kayla.eot');
+  src: url('../fonts/kayla.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/kayla.woff') format('woff'),
+       url('../fonts/kayla.ttf') format('truetype'),
+       url('../fonts/kayla.svg?#kayla') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'kayla';
+    src: url('../font/kayla.svg?62940176#kayla') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "kayla";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-pinterest:before { content: '\e800'; } /* '' */
+.icon-linkedin:before { content: '\e801'; } /* '' */
+.icon-instagram:before { content: '\e802'; } /* '' */
+
+$brandonMedium: "Brandon Medium", sans-serif;
+$brandonRegular: "Brandon Regular", sans-serif;
+$brandonBlack: "Brandon Black", sans-serif;
+
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+$helvetica: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+$verdana: Verdana, Geneva, sans-serif;
