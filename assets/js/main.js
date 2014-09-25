@@ -8,8 +8,7 @@ var kaylaGriffinAPI = (function () {
 	var currentPage = window.location.pathname;
 	var notIndex = window.location.search;
 	var index1 = "/kaylagriffin/index.php";
-	var index2 = "";
-	var category;
+	var index2 = "?page=work";
 
 	function mobileNav() {
 
@@ -54,16 +53,12 @@ var kaylaGriffinAPI = (function () {
 
 	function desktopNav() {
 
-		$(".work li a.filter").on("click", function() {
+		$(".work li a.filter").on("click", function(e) {
 
-			category = this.getAttribute("data-filter");
+			if (notIndex === index2) {
 
-			if (notIndex != index2) {
+				e.preventDefault();
 
-				// var frame = document.getElementById("frame");
-				window.location = "index.php";
-				// $("#grid").mixItUp("filter", category);
-			
 			}
 
 		});
@@ -73,8 +68,6 @@ var kaylaGriffinAPI = (function () {
 	// INIT FUNCTION
 	function init() {
 
-		console.log(category);
-
 		// CALL INIT FUNCTIONS
 		console.log("kaylaGriffinAPI loaded...");
 
@@ -82,13 +75,26 @@ var kaylaGriffinAPI = (function () {
 		desktopNav();
 
 		// MIX IT UP
-		console.log(currentPage);
-		if (currentPage === index1) {
+		$("#grid").mixItUp();
 
-			$("#grid").mixItUp();
+		// ABOUT SLIDER
+		$('.about-slider').bxSlider({
+			pager: false,
+			nextSelector: '#slider-next',
+			prevSelector: '#slider-prev',
+			nextText: '<img src="assets/img/arrow-right.png"/>',
+			prevText: '<img src="assets/img/arrow-left.png"/>'
+		});
 
-		}	
-		
+		// ABOUT SLIDER
+		$('.work-slider').bxSlider({
+			pager: false,
+			nextSelector: '#work-next',
+			prevSelector: '#work-prev',
+			nextText: '<img src="assets/img/arrow-right.png"/>',
+			prevText: '<img src="assets/img/arrow-left.png"/>'
+		});
+
 	}
 
 	// PUBLIC FUNCTIONS

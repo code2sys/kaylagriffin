@@ -8,9 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-
+        <link rel="shortcut icon" href="assets/img/fav-icon.png">
         <link rel="stylesheet" href="assets/css/styles.min.css">
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+        <script src="assets/js/main.min.js"></script>
 
     </head>
     <body>
@@ -35,28 +36,29 @@
                 <img src="assets/img/logo.png" alt="" id="nav-logo">
                 <h1>kayla griffin</h1>
                 <h2>designer &middot; thinker &middot; happy person</h2>    
-                <h3>work</h3>
+
+                <ul class="top">
+                    <li><a href="index.php?page=work">work</a></li>
+                </ul>
 
                 <ul class="work">
-                    <li><a href="index.php?page=canopy">canopy</a></li>
+<!--                     <li><a href="index.php?page=canopy">canopy</a></li> -->
                     <li><a href="index.php?page=stomping-grounds">stomping grounds</a></li>
                     <li><a href="index.php?page=render">render</a></li>
                     <li><a href="index.php?page=prepped">prepped</a></li>
                     <li><a href="index.php?page=marsh-monster">marsh monster</a></li>
                     <li><a href="index.php?page=zest-magazine">zest magazine</a></li>
-                    <li><a class="filter" data-filter=".web">web</a></li>
-                    <li><a class="filter" data-filter=".book">book covers</a></li>
-                    <li><a class="filter" data-filter=".packaging">packaging</a></li>
-                    <li><a class="filter" data-filter=".campaigns">campaigns</a></li>
-                    <li><a class="filter" data-filter=".logos">logos</a></li>
-                    <li><a class="filter" data-filter=".extra">a little extra</a></li>
-                    <li><a class="filter" data-filter="all">show all</a></li>
+                    <li><a href="index.php?page=web">web</a></li>
+                    <li><a href="index.php?page=book">book covers</a></li>
+                    <li><a href="index.php?page=packaging">packaging</a></li>
+<!--                     <li><a href="index.php?page=campaigns">campaigns</a></li>
+                    <li><a href="index.php?page=logos">logos</a></li>
+                    <li><a href="index.php?page=extra">a little extra</a></li> -->
                 </ul>
 
                 <ul class="main">
-                    <li><a href="">about</a></li>
-                    <li><a href="">resume</a></li>
-                    <li><a href="">get in touch</a></li>
+                    <li><a href="index.php?page=about">about</a></li>
+                    <li><a href="index.php?page=resume">resume</a></li>
                 </ul>
                 
                 <div class="info-box">
@@ -81,6 +83,8 @@
 
         <section class="mobile-splash">
             <img src="assets/img/logo.png" alt="Kayla Griffin" />
+            <h1 class="mobile">kayla griffin</h1>
+            <h2 class="mobile">designer &middot; thinker &middot; happy person</h2>  
         </section>
 
         <section id="frame">
@@ -107,7 +111,7 @@
             
         </section>
 
-        <script src="assets/js/main.min.js"></script>
+        
 
         <!-- LIVERELOADING FOR GRUNT -->
         <script src="//localhost:35729/livereload.js"></script>

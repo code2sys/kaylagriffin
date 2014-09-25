@@ -1,0 +1,216 @@
+#canopy {
+	background: url(../img/work/canopy.jpg) center center;
+	background-size: cover;
+}
+
+#stomping-grounds {
+	background: url(../img/work/stomping-grounds.jpg) center center;
+	background-size: cover;
+}
+
+#render {
+	background: url(../img/work/render.jpg) center center;
+	background-size: cover;
+}
+
+#prepped {
+	background: url(../img/work/prepped.jpg) center center;
+	background-size: cover;
+}
+
+#marsh-monster {
+	background: url(../img/work/marsh-monster.jpg) center center;
+	background-size: cover;
+}
+
+#zest {
+	background: url(../img/work/zest.jpg) center center;
+	background-size: cover;
+}
+
+#rei {
+	background: url(../img/work/rei.jpg) center center;
+	background-size: cover;
+}
+
+#ga-lottery {
+	background: url(../img/work/ga-lottery.jpg) center center;
+	background-size: cover;
+}
+
+#brads-portfolio {
+	background: url(../img/work/brads-portfolio.jpg) center center;
+	background-size: cover;
+}
+
+#h-for-h {
+	background: url(../img/work/h-for-h.jpg) center center;
+	background-size: cover;
+}
+
+#dos-book-covers {
+	background: url(../img/work/dos-book-covers.jpg) center center;
+	background-size: cover;
+}
+
+#land-remembered {
+	background: url(../img/work/land-remembered.jpg) center center;
+	background-size: cover;
+}
+
+#olo {
+	background: url(../img/work/olo.jpg) center center;
+	background-size: cover;
+}
+
+#shield {
+	background: url(../img/work/shield.jpg) center center;
+	background-size: cover;
+}
+
+#spiked {
+	background: url(../img/work/spiked.jpg) center center;
+	background-size: cover;
+}
+
+#canine-coach {
+	background: url(../img/work/canine-coach.jpg) center center;
+	background-size: cover;
+}
+
+#merry-maids {
+	background: url(../img/work/merry-maids.jpg) center center;
+	background-size: cover;
+}
+
+#pints-for-pups {
+	background: url(../img/work/pints-for-pups.jpg) center center;
+	background-size: cover;
+}
+
+#work-logo {
+	background: url(../img/work/logo.jpg) center center;
+	background-size: cover;
+}
+
+#bronzin-brands {
+	background: url(../img/work/bronzin-brands.jpg) center center;
+	background-size: cover;
+}
+
+#crab-trap {
+	background: url(../img/work/crab-trap.jpg) center center;
+	background-size: cover;
+}
+
+#play {
+	background: url(../img/work/play.jpg) center center;
+	background-size: cover;
+}
+
+#fun-with-type {
+	background: url(../img/work/fun-with-type.jpg) center center;
+	background-size: cover;
+}
+
+// WORK IMAGES
+
+.work-full {
+	float: left;
+	width: 100%;
+	padding: 8px 8px;
+	@include box-sizing(border-box);
+	&:last-child {
+		margin-bottom: 40px;
+	}
+	@include mq(tablet) {
+		padding: 8px 60px;
+	}
+}
+
+.work-middle {
+	float: left;
+	width: 100%;
+	padding: 8px 8px;
+	@include box-sizing(border-box);
+	&:last-child {
+		margin-bottom: 40px;
+	}
+	@include mq(tablet) {
+		margin-left: 25%;
+		width: 50%;
+		padding: 8px 60px;
+	}
+}
+
+.work-half {
+	float: left;
+	width: 100%;
+	padding: 8px 8px;
+	@include box-sizing(border-box);
+	&:last-child {
+		margin-bottom: 40px;
+	}
+	@include mq(tablet) {
+		width: 50%;
+		padding: 8px 60px;
+		&:nth-child(odd) {
+			padding-right: 60px;
+			padding-left: 8px;
+		}
+		&:nth-child(even) {
+			padding-left: 60px;
+			padding-right: 8px;
+		}
+	}
+}
+
+.work-third {
+	float: left;
+	width: 100%;
+	padding: 8px 8px;
+	@include box-sizing(border-box);
+	@include mq(tablet) {
+		width: 33.333333%;
+	}
+}
+
+.work-slider-wrap {
+	float: left;
+	width: 100%;
+	padding: 8px 8px;
+	@include box-sizing(border-box);
+	@include mq(tablet) {
+		padding: 8px 60px;
+	}
+}
+
+.work-controls {
+	position: relative;
+	margin: 10px 0 40px 5%;
+	width: 90%;
+	height: 49px;
+	#work-prev {
+		position: relative;
+		top: 0;
+		float: left;
+	}
+	#work-next {
+		position: relative;
+		top: 0;
+		float: right;
+	}
+}
+
+.work-text-wrap {
+		float: left;
+		width: 100%;
+		padding: 8px 8px;
+		@include box-sizing(border-box);
+		&:last-child {
+			margin-bottom: 40px;
+		}
+		@include mq(tablet) {
+			padding: 8px 60px;
+		}
+	}
